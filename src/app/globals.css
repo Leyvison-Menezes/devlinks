@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --color-primary: var(--primary);
+    --color-stroke: var(--stroke);
+    --color-surface: var(--surface);
+    --color-surface-hover: var(--surface-hover);
+    --color-highlight: var(--highlight);
+
+    --font-sans: var(--font-inter), system-ui, sans-serif;
+
+    --text-md: 1rem;
+    --text-md--line-height: 1.5rem;
+
+    --text-sm: 0.875rem;
+    --text-sm--line-height: 1.5rem;
+}
+
+@layer base{
+    :root{
+        --primary: #000000;
+        --stroke: #00000080;
+        --surface: #0d000000;
+        --surface-hover: #00000005;
+        --highlight: #0000001a;
+    }
+    .dark{
+        --primary: #FFFFFF;
+        --stroke: #FFFFFF80;
+        --surface: #FFFFFF0D;
+        --surface-hover: #FFFFFF05;
+        --highlight: #FFFFFF1A;
+    }
+    body {
+        font-family: var(--font-sans);
+  }
+}
