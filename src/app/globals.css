@@ -21,14 +21,14 @@
     :root{
         --primary: #000000;
         --stroke: #00000080;
-        --surface: #0d000000;
+        --surface: #0d000013;
         --surface-hover: #00000005;
         --highlight: #0000001a;
     }
     .dark{
         --primary: #FFFFFF;
         --stroke: #FFFFFF80;
-        --surface: #FFFFFF0D;
+        --surface: #ffffff26;
         --surface-hover: #FFFFFF05;
         --highlight: #FFFFFF1A;
     }

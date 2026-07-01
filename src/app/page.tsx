@@ -4,6 +4,10 @@ import avatarLight from "../../public/avatar-light-mode.svg";
 import avatarDark from "../../public/avatar-dark-mode.svg";
 import bgLight from '../../public/bg-desktop-light.jpg'
 import bgDark from '../../public/bg-desktop.jpg'
+import github from '../../public/logo-icons/GitHub.svg'
+import youtube from '../../public/logo-icons/YouTube.svg'
+import insta from '../../public/logo-icons/Instagram.svg'
+import linkedin from '../../public/logo-icons/LinkedIn.svg'
 
 import { Button } from "../components/ui/button";
 import { ThemeToggle } from "../components/ui/theme-toggle";
@@ -11,7 +15,7 @@ import { ThemeToggle } from "../components/ui/theme-toggle";
 export default function Home() {
 
   return (
-    <div className="flex flex-col items-center mt-14 mx-auto max-w-90 md:max-w-147 p-6">
+    <div className="flex flex-col items-center mt-4 mx-auto max-w-90 md:max-w-147 p-6">
       <Image 
         src={bgLight} 
         alt="Background Claro" 
@@ -44,10 +48,11 @@ export default function Home() {
       </div>
 
       <div className="flex gap-4 items-center pb-6">
-        <p>a</p>
-        <p>b</p>
-        <p>c</p>
-        <p>d</p>
+        <a href="/" className="p-2 rounded-full hover:bg-surface"><Image src={github} alt="github" /></a>
+        <a href="/" className="p-2 rounded-full hover:bg-surface"><Image src={youtube} alt="youtube" /></a>
+        <a href="/" className="p-2 rounded-full hover:bg-surface"><Image src={insta} alt="instagram" /></a>
+        <a href="/" className="p-2 rounded-full hover:bg-surface"><Image src={linkedin} alt="LinkedIn" /></a>
+        
       </div>
 
       <p>
